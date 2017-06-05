@@ -5,9 +5,11 @@
   "dependencies": {
     "baconjs": "^0.7.93",
     "baret": "^1.0.1",
+    "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "spectre.css": "^0.2.14"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
