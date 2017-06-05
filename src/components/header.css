@@ -2,3 +2,7 @@
   background: #ff0;
   padding: 10px;
 }
+
+.list {
+  list-style: none;
+}
