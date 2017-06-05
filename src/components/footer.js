@@ -4,7 +4,7 @@ import styles from './footer.css'
 const seconds = Bacon.interval(1000).toProperty()
 const Footer = () =>
   <div className={styles.footer}>
-      The clock is ticking: {seconds.map(() => new Date().toISOString())}
+    I'm a footer
   </div>
 
 export default Footer

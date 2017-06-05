@@ -8,12 +8,12 @@ html, body {
   text-align: center;
   min-height:100%;
   position:relative;
+  background: #f2f2f2;
 }
 
 .content {
   padding: 10px;
   padding-bottom: 60px;
-  background: #eeeeee;
   min-height:100%;
   position:relative;
 }
