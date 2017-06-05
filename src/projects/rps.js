@@ -10,7 +10,6 @@ class RPSLoader extends React.Component {
   }
   componentWillMount() {
     lazyLoad(app => {
-      console.log(app)
       this.setState(() => {return {app: app.default}})
     })
   }

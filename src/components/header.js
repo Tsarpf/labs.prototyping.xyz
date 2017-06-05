@@ -1,6 +1,7 @@
 import React from 'baret'
 import {Link} from 'react-router-dom'
 
+import styles from './header.css'
 import spectre from '../../node_modules/spectre.css/docs/dist/spectre.css'
 
 import _ from 'lodash'
@@ -19,7 +20,7 @@ const Header = ({currentPage, path}) => {
   })
   .filter(e=>e.length>0)
 
-  return <div>
+  return <div className={styles.header}>
     <ul className={spectre.breadcrumb}>
 
       {path !== '/' ? <li className={spectre['breadcrumb-item']}> <Link to='/'> Home </Link> </li> : null}
