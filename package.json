@@ -5,6 +5,7 @@
   "dependencies": {
     "baconjs": "^0.7.93",
     "baret": "^1.0.1",
+    "bundle-loader": "^0.5.5",
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

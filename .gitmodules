@@ -1,0 +1,3 @@
+[submodule "src/projects/rps"]
+	path = src/projects/rps
+	url = git@github.com:Tsarpf/rock-paper-scissors.git

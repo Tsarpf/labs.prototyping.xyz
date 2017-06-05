@@ -1,7 +1,6 @@
 import React from 'baret'
 import {Link} from 'react-router-dom'
 
-import styles from './header.css'
 import spectre from '../../node_modules/spectre.css/docs/dist/spectre.css'
 
 import _ from 'lodash'
