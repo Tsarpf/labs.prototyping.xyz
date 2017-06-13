@@ -22,9 +22,8 @@ const Header = ({currentPage, path}) => {
 
   return <div className={styles.header}>
     <ul className={spectre.breadcrumb}>
-
       {path !== '/' ? <li className={spectre['breadcrumb-item']}> <Link to='/'> Home </Link> </li> : null}
-      {breadcrumbs.map((b, idx) =>  <Breadcrumb key={idx} crumb={b}/>)}
+      {breadcrumbs.map((b, idx) => <Breadcrumb key={idx} crumb={b} />)}
       <li className={spectre['breadcrumb-item']}> <Link to={path}> {currentPage} </Link> </li>
     </ul>
   </div>
