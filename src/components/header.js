@@ -20,6 +20,10 @@ const Header = ({currentPage, path}) => {
   })
   .filter(e=>e.length>0)
 
+  if(path === '/') {
+    return <h1 className={styles.header}> labs.prototyping.xyz </h1>
+  }
+
   return <div className={styles.header}>
     <ul className={spectre.breadcrumb}>
       {path !== '/' ? <li className={spectre['breadcrumb-item']}> <Link to='/'> Home </Link> </li> : null}

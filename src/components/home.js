@@ -4,10 +4,6 @@ import styles from './home.css'
 
 const Home = () =>
       <div className="stuff">
-        <h1>
-          Welcome
-        </h1>
-
         <ul>
           <li className={styles.list}> <Link to={'/projects'}> All projects </Link> </li>
           <li className={styles.list}> <a href={'https://rabid.prototyping.xyz'}> Blog </a> </li>
