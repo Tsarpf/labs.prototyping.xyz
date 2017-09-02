@@ -6,9 +6,11 @@
     "baconjs": "^0.7.93",
     "baret": "^1.0.1",
     "bundle-loader": "^0.5.5",
+    "iframe-resizer": "^3.5.14",
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-iframe-resizer-super": "^0.2.0",
     "react-router-dom": "^4.1.1",
     "spectre.css": "^0.2.14"
   },

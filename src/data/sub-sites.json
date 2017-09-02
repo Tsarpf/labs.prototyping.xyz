@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Rock Paper Scissors",
+        "address": "http://labs.prototyping.xyz/subs/rps/index.html",
+        "path": "/portal/rps",
+        "iframe": true
+    },
+    {
+        "name": "Rock Paper Scissors",
+        "path": "/projects/rps",
+        "iframe": false
+    }
+]

@@ -5,13 +5,10 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Header from './components/header.js'
 import Footer from './components/footer.js'
 import Home from './components/home.js'
-import RPS from './projects/rps.js'
 import ProjectList from './components/project-list.js'
 
-const Projects = [
-  [RPS, '/projects/rps', 'Rock Paper Scissors'],
-  //[ModelConverter, '/model-converter'],
-]
+const Projects = require('./components/portal.js')
+console.log(Projects)
 const Pages = [
   [Home, '/', ''],
   [ProjectList, '/projects', 'Project list'],
@@ -29,17 +26,17 @@ const Page = ({children, name, match, ...rest}) => {
           <Footer></Footer>
         </div>
 }
-const PageGen = (Component, name) => {
+const PageGen = (Component, name, address) => {
   return (props) => <Page {...props} name={name}>
-    <Component projects={Projects}/>
+    <Component projects={Projects} {...{name, address}}/>
   </Page>
 }
 
 const App = () =>
   <Router>
     <div className={styles.container}>
-      {Pages.map(([Component, path, name], idx) =>
-        <Route exact path={path} key={idx} component={PageGen(Component, name)}/>
+      {Pages.map(([Component, path, name, address], idx) =>
+        <Route className={styles.container} exact path={path} key={idx} component={PageGen(Component, name, address)}/>
       )}
     </div>
   </Router>
